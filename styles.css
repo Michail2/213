@@ -1,0 +1,89 @@
+/* Задать параметры элемента класса */
+/* одному тегу можно задавать несколько классов */
+/* использование уникальных id в CSS выглядит так: 
+HTML: <div id="block">
+	<h2>заголовок</h2>
+	<p>текст</p>
+	<p>текст</p>
+</div>
+CSS
+  #block h2 {
+	color: red; } */
+.Абзац {
+  color: aqua;
+}
+
+
+html {
+  background: url( i.webp ) no-repeat center center;
+  filter: opacity( 100% );
+  min-height: 100%;
+  background-size: cover;
+}
+/* Если написано p.ppp это значит что параметры будут применяться ко всем p относящимся к классу ppp, а если написать p .ppp то параметры будут применяться ко всем элементам относящемся к классу ppp находящемся в p */
+/* Позволяет менять параметры кусков текста*/
+span {
+  font-family: 'Times New Roman', Times, serif;
+  color: blueviolet;
+}
+
+div {
+  /* установка размера абзаца */
+  text-indent: 50px;
+  width: 400px;
+  /* добавить линию под текстом*/
+  text-decoration: underline;
+  /* добавить линию над текстом text-decoration: overline; */
+  /* добавить перечеркнутую линию text-decoration: line-through; */
+  /* отменить все эффекты text-decoration: none; */
+}
+p {
+  /* выравнивание по правому краю*/
+  width: 500px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: Arial;
+  text-indent: 40px;
+}
+/* что бы перекрачить все абзацы лежащие в div нужно написать div > p {...} */
+/* реальный видимый промежуток между строками будет вычисляться так: line-height - font-size = видимое расстояние между строками текста. */
+h1 {
+  color: blue;
+  text-align: center;
+  width: 500px;
+  /* Задать шрифт */
+ /* font-family: 'Times New Roman', Times, serif;*/
+  /*установить размер шрифта*/
+  font-size: 40px;
+}
+h2 {
+   /* сделать текст курсивным */
+  /*font: italic 40px normal;*/
+  font-weight: normal;
+  text-align: center;
+  font-size: 30px;
+  width: 500px;
+  color: green;
+}
+table {
+  width: 500px;
+  height: 300px;
+}
+
+th {
+  font-weight: normal;
+}
+td {
+  text-align: center;
+  /* сделать текст жирным*/
+  font-weight: bold;
+}
+/* выравнивание и по правому краю и по левому
+  text-align: justify; */
+  ul {
+    width: 400px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 20px;
+  }
